@@ -1,0 +1,227 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* nav bar i toppen */
+
+nav {
+    background-color: blue;
+    padding: 12px 0;
+    position: fixed;
+    width: 100%;
+    z-index: +20;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.image-container {
+    max-width: 100%;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    position: relative;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Krops healing tekst oven på billedet */
+
+.image-text {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    margin-top: 30%;    
+}
+
+.image-text a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 80px; /* Endre denne verdien etter behov */
+    margin-left: 19%;
+}
+
+.image-text:hover a {
+    text-decoration: underline;
+}
+
+/* Burger menu uddsende */
+
+.burger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .burger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 150px;
+    height: 100%;
+    background-color: #212020;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Ændret til lodret layout */
+    align-items: flex-end; /* Justeret justeringen til højre */
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right; /* Justeret tekstjustering til højre */
+  }
+  
+  .menu li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    color: #e44d26;
+  }
+  
+  .close-icon {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    color: #ddd;
+  }
+
+  /* Burger menu slutter her */
+
+  .indhold {
+    margin-top: 0%;
+  }
+
+
+  .indhold a {
+    color: #333;
+    margin: 50%;
+  }
+
+  .indhold p {
+    color: #333;
+    margin-left: 20%;
+    
+  }
+
+ .parallax-container {
+    position: relative;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    
+}
+        
+    .indhold { 
+        position: absolute;
+        
+        background-color: white;
+        
+        z-index: +10;
+    }
+
+
+
+video {
+
+    margin-left: 20%;
+}
+
+button {
+    cursor: pointer;
+    margin-left: 20%;
+    padding: 0px;
+}
+
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#closePopup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
